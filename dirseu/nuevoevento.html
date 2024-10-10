@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Evento</title>
+    <link rel="stylesheet" href="estilos/nuevo.css">
+    <style>
+        .form-group {
+            display: flex;
+            align-items: center; /* Alinea verticalmente los elementos */
+            margin-bottom: 15px; /* Espacio entre grupos */
+        }
+
+        .form-group label {
+            width: 120px; /* Ancho fijo para las etiquetas */
+        }
+
+        .form-group input, .form-group textarea {
+            flex: 1; /* El input ocupa el espacio restante */
+            margin-left: 10px; /* Espacio entre la etiqueta y el input */
+        }
+
+        .form-row {
+            display: flex; /* Muestra los elementos en una fila */
+            justify-content: space-between; /* Espaciado entre los elementos */
+            align-items: center; /* Alinea verticalmente los elementos */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ASISTENCIA</h1>
+        <button class="logout-btn">Cerrar Sesión</button>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <img src="docente-icon.png" alt="Docente Icono" class="menu-icon">
+            <p>Docente</p>
+        </div>
+
+        <div class="main-content">
+            <h2>Nuevo Evento</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="encargado">Encargado:</label>
+                    <input type="text" id="encargado" name="encargado" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horaInicio">Hora Inicio:</label>
+                        <input type="time" id="horaInicio" name="horaInicio" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lugar">Lugar:</label>
+                        <input type="text" id="lugar" name="lugar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horaFinal">Hora Final:</label>
+                        <input type="time" id="horaFinal" name="horaFinal" required>
+                    </div>
+                </div>
+
+                <table class="asistentes">
+                    <thead>
+                        <tr>
+                            <th>Nro</th>
+                            <th>Apellidos</th>
+                            <th>Nombres</th>
+                            <th>Código</th>
+                            <th>Observación</th>
+                            <th>Operación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí irán los asistentes -->
+                    </tbody>
+                </table>
+
+                <button type="submit" class="btn-guardar">GUARDAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

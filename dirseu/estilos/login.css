@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(227, 71%, 46%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del título */
+.header-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/* Contenedor del formulario de login */
+.login-container {
+    background-color: #8fa6b6;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+}
+
+/* Estilo del título de login */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Estilos del formulario */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos de los botones */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    width: 48%;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del enlace "¿Olvidaste tu contraseña?" */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
