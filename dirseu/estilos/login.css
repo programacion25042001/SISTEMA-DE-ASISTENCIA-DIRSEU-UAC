@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: hsl(227, 71%, 46%);
+    background-color: rgba(0,64,122,1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
 .login-container {
     background-color: #8fa6b6;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 250px;
@@ -35,7 +35,7 @@ body {
 
 /* Estilo del título de login */
 .login-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #000000;
 }
 

@@ -1,183 +1,168 @@
-/* Estilo General */
+/* Reset y Estilos generales */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #003366; /* Fondo azul para toda la página */
-    color: white; /* Color de texto blanco por el fondo oscuro */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container {
+    display: flex;
+    background-color: white;
+    box-shadow: 10 10 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el Encabezado */
-.header {
-    background-color: #f1f1f1;
-    padding: 10px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #003366;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-}
-#sidebar .menu-icon {
-    color: white;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.logout-btn {
-    background-color: #ccc;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
+}
+
+h1.tittle1 {
+    font-size: 24px;
+}
+
+#cerrar_sesion {
+    background-color: #ffffff;
+    color: #002e5d;
     border: none;
+    padding: 2px 5px;
     cursor: pointer;
-    border-radius: 5px;
+    border: solid;
+    border-radius: 1%;
 }
 
-/* Contenedor principal */
-.container {
-    display: flex;
-    padding: 20px;
-}
-
-/* Sidebar - Sección del Docente */
-.sidebar {
-    background-color: #003366;
-    color: white;
-    width: 250px;
+.tittle2 {
     text-align: center;
+    margin: 20px 1;
+}
+
+.tittle2 h1, .tittle2 h2 {
+    color: #002e5d;
+}
+
+/* Estilos del Sidebar */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #002e5d;
     padding: 20px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.docente-icon {
-    width: 100px;
-    height: 100px;
+#sidebar .menu-icon {
+    color: white;
+    font-size: 69px;
     margin-bottom: 10px;
 }
 
-.sidebar p {
-    font-size: 18px;
-    font-weight: bold;
+#sidebar p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
-/* Sección del Formulario */
+#sidebar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#sidebar a:hover {
+    background-color: #005b99;
+    border-radius: 8px;
+}
+
 .main-content {
     flex-grow: 1;
-    margin-left: 20px;
-    background-color: #ffffff; /* blanco  más oscuro para la sección del formulario */
-    padding: 20px;
-    border-radius: 10px;
-    color: rgb(5, 5, 5); /* Texto blanco en el formulario */
+    padding: 2px;
+    background-color: white;
 }
 
-.main-content h2 {
-    color: #000000;
-    font-size: 24px;
-    text-align: left;
+h1 {
+    color: #060d8d;
+    text-align: center;
+}
+
+h1 {
+    color: #110379;
+    text-align: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
 }
 
-/* Estilos del Formulario */
-.form-group {
+.form-group, .form-group-inline {
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    align-items: center;
 }
 
 .form-group label {
-    width: 150px;
-    font-weight: bold;
+    flex: 0 0 101px;
 }
 
 .form-group input {
-    flex-grow: 1;
-    padding: 10px;
+    flex: 1;
+    padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-    color: #000;
+    border-radius: 2px;
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+}
+
+.form-group-inline .form-group:first-child {
+    margin-right: 6px;
+}
+
+.table-container {
+    margin-top: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
-table th, table td {
-    border: 1px solid #ffffff;
-    padding: 10px;
-    text-align: center;
-    background-color: #f1f1f1;
-    color: #000;
-}
-
-table th {
-    background-color: #004080;
-    color: white;
-}
-
-.btn-agregar {
-    background-color: #002790;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-guardar {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #002790;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-}
-/* Estilos del Formulario para Fecha, Hora, Lugar */
-.form-group-fecha-hora {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.form-group-fecha-hora label {
-    width: 120px;
-    font-weight: bold;
-}
-
-.form-group-fecha-hora input {
-    width: 100%;
-    padding: 8px;
-    margin-left: 10px;
+table, th, td {
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-    color: #000;
 }
 
-/* Ajuste de las columnas */
-.form-group-fecha-hora .left-column,
-.form-group-fecha-hora .right-column {
-    width: 48%; /* Ajusta el ancho de cada columna para alinearlas en la misma fila */
-    display: flex;
-    justify-content: space-between;
+th, td {
+    padding: 1px;
+    text-align: center;
 }
 
-.form-group-fecha-hora .left-column label,
-.form-group-fecha-hora .right-column label {
-    width: 35%; /* Asegura que los labels ocupen menos espacio */
+th {
+    background-color: #f0f0f0;
 }
 
-.form-group-fecha-hora .left-column input,
-.form-group-fecha-hora .right-column input {
-    width: 60%; /* Ajusta el ancho de los inputs */
+button {
+    background-color: #012a63;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.save-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #071c97;
 }

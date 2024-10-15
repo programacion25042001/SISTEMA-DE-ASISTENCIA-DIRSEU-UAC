@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estudiante</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos/nuevoest.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Sidebar / Menu Lateral -->
+        <div id="sidebar">
+            <div class="menu-icon">
+                <i class="fas fa-user"></i>
+                <p>Alumno</p>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div id="main-content">
+            <header>
+                <h1 class="title"></h1>
+                <button id="cerrar-sesion">Cerrar Sesión</button>
+            </header>
+
+            <h2>Nuevo Estudiante</h2>
+
+            <form action="#" method="post">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <div class="row">
+                    <div>
+                        <label for="codigo">Código:</label>
+                        <input type="text" id="codigo" name="codigo" required>
+                    </div>
+                    <div>
+                        <label for="facultad">Facultad:</label>
+                        <select id="facultad" name="facultad" required>
+                            <option value="" disabled selected>Ingenieria y Arquitectura</option>
+                            <option value="" disabled selected>Derecho </option>
+                            <!-- Añadir opciones -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+                    <div>
+                        <label for="escuela">Escuela Profesional:</label>
+                        <select id="escuela" name="escuela" required>
+                            <option value="" disabled selected>Ingenieria de sistemas</option>
+                            <option value="" disabled selected>Ingenieria de Civil</option>
+                            <option value="" disabled selected>Derecho</option>
+                            <option value="" disabled selected> Administracion</option>
+                            <!-- Añadir opciones -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="delete-btn">ELIMINAR</button>
+                    <button type="button" class="edit-btn">EDITAR</button>
+                    <button type="submit" class="save-btn">GUARDAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+     
+
+   
+
+
+
+
+    

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Evento</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos/editar.css">
+</head>
+<body>
+    <div class="container">
+       <!-- Sidebar / Menu Lateral -->
+       <div id="sidebar">
+        <div class="menu-icon">
+            <i class="fas fa-user"></i>
+            <p>Docente</p>
+        </div>
+    </div>
+
+
+        <!-- Main content -->
+        <main>
+            <div class="edit-event">
+                <h1>Editar Evento</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <input type="text" id="descripcion">
+                    </div>
+                    <div class="form-group">
+                        <label for="encargado">Encargado:</label>
+                        <input type="text" id="encargado">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha">
+                        <label for="hora-inicio">Hora Inicio:</label>
+                        <input type="time" id="hora-inicio">
+                    </div>
+                    <div class="form-group">
+                        <label for="lugar">Lugar:</label>
+                        <input type="text" id="lugar">
+                        <label for="hora-final">Hora Final:</label>
+                        <input type="time" id="hora-final">
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="eliminar">ELIMINAR</button>
+                        <button type="submit" class="guardar">GUARDAR</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Logout Button -->
+        <button class="logout">Cerrar Sesión</button>
+    </div>
+</body>
+</html>

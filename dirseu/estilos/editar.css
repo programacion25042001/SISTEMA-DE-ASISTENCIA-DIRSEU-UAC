@@ -1,0 +1,125 @@
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00214D;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilos del Sidebar */
+#sidebar {
+    position: fixed;
+    left: 1;
+    top: 1;
+    width: 200px;
+    height: 150%;
+    background-color: #002e5d;
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar .menu-icon {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+#sidebar p {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+
+/* Main content */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00214D;
+}
+
+.edit-event {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.edit-event h1 {
+    color: #000482;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 30%;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 65%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #d4d3de;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.eliminar, .guardar {
+    background-color: #00214D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.eliminar {
+    background-color: #0c0590;
+}
+
+.guardar {
+    background-color: #0c0590;
+}
+
+/* Logout button */
+.logout {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #13238c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
